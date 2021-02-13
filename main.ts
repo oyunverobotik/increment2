@@ -7,7 +7,8 @@ input.onButtonPressed(Button.B, function () {
     showNumber(num)
 })
 function showNumber (num: number) {
-    basic.showString("" + (num))
+    basic.showArrow(ArrowNames.North)
+    led.plot(0, 0)
 }
 let num = 0
 num = 0
