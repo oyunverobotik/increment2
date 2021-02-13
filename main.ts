@@ -6,9 +6,13 @@ input.onButtonPressed(Button.B, function () {
     num = num + 1
     showNumber(num)
 })
-function showNumber (num: number) {
-    basic.showArrow(ArrowNames.North)
-    led.plot(0, 0)
+function showNumber (num2: number) {
+    column = num2 / 5
+    row = num2 % 5
+    led.plot(row, column)
 }
+let row = 0
+let column = 0
 let num = 0
 num = 0
+showNumber(num)
