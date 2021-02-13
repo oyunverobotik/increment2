@@ -7,8 +7,8 @@ input.onButtonPressed(Button.B, function () {
     showNumber(num)
 })
 function showNumber (num2: number) {
-    column = num2 / 5
-    row = num2 % 5
+    column += num2 / 5
+    row += num2 % 5
     led.plot(row, column)
 }
 let row = 0
